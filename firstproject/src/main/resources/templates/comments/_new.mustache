@@ -1,0 +1,14 @@
+<div id = "comments-list">
+    <!-- 이거 쓸려면 controller에서 모델에 dto 등록해야 한다 -->
+    {{#commentDtos}}
+        <div class="card m-2" id="comments-{{id}}">
+            <div class="card-header">
+                {{nickname}}
+            </div>
+            <div class="card-body">
+                {{body}}
+            </div>
+        </div>
+    {{/commentDtos}}
+
+</div>
